@@ -1,4 +1,4 @@
-package org.example.DAO;
+package org.example.walletapi.DAO;
 
 import org.example.databaseConfiguration.DatabaseConnection;
 import org.example.model.Account;

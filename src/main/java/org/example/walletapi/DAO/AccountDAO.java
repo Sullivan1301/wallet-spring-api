@@ -3,6 +3,7 @@ package org.example.walletapi.DAO;
 import org.example.databaseConfiguration.DatabaseConnection;
 import org.example.model.Account;
 import org.example.model.Amount;
+import org.example.walletapi.model.Account;
 
 import java.sql.*;
 import java.time.LocalDateTime;
@@ -11,15 +12,15 @@ import java.util.List;
 import java.util.UUID;
 
 
-public class AccountDAO implements org.example.DAO.DAOInterface<Account> {
+public class AccountDAO implements DAOInterface<Account> {
     private final DatabaseConnection connection;
-    private final org.example.DAO.AmountDAO amountDAO;
-    private final org.example.DAO.TransactionDAO transactionDAO;
+    private final AmountDAO amountDAO;
+    private final TransactionDAO transactionDAO;
 
     public AccountDAO() {
         this.connection = new DatabaseConnection();
-        this.amountDAO = new org.example.DAO.AmountDAO();
-        this.transactionDAO = new org.example.DAO.TransactionDAO();
+        this.amountDAO = new AmountDAO();
+        this.transactionDAO = new TransactionDAO();
     }
 
     // Trouve tous les comptes sans leurs montants et transactions associées

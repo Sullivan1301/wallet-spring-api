@@ -1,6 +1,7 @@
-package org.example.DAO;
+package org.example.walletapi.DAO;
 
 import org.example.databaseConfiguration.DatabaseConnection;
+import org.example.walletapi.DAO.CrudDAO;
 
 import java.lang.reflect.Field;
 import java.sql.*;
@@ -104,12 +105,6 @@ public abstract class AbstractCrudDAO<T> implements CrudDAO<T> {
             }catch  ( IllegalAccessException | SQLException e){
                 e.printStackTrace();
             }
-        }
-    }
-
-    private T mapResultSetEntity(ResultSet rs){
-        try{
-            new getEntityClass()
         }
     }
 

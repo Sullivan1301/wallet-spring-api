@@ -1,4 +1,4 @@
-package org.example.databaseConfiguration;
+package org.example.walletapi.databaseConfiguration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

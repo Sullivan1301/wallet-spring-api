@@ -1,4 +1,4 @@
-package org.example.DAO;
+package org.example.walletapi.DAO;
 
 import org.example.model.Account;
 import org.example.model.CurrencyValue;

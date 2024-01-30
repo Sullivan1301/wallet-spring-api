@@ -1,4 +1,4 @@
-package org.example.DAO;
+package org.example.walletapi.DAO;
 
 import org.example.databaseConfiguration.DatabaseConnection;
 import org.example.model.Currency;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class CurrencyDAO implements DAOInterface<Currency> {
+public class CurrencyDAO implements org.example.DAO.DAOInterface<Currency> {
     private final DatabaseConnection connection;
 
     public CurrencyDAO() {

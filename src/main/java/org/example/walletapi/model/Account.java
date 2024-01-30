@@ -1,4 +1,4 @@
-package org.example.model;
+package org.example.walletapi.model;
 
 import lombok.*;
 
@@ -15,8 +15,8 @@ import java.util.UUID;
 public class Account {
     private int accountId;
     private String accountName;
-    private Amount amount;
-    private List<Transaction> transactionList;
+    private org.example.model.Amount amount;
+    private List<org.example.model.Transaction> transactionList;
     private int currency;
     private String accountType;
 

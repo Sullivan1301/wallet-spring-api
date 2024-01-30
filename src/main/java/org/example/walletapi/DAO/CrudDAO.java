@@ -1,4 +1,4 @@
-package org.example.DAO;
+package org.example.walletapi.DAO;
 
 import java.util.List;
 
